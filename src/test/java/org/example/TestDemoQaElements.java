@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-public class TestDemoQa {
+public class TestDemoQaElements {
 
     /* объявление статистических переменных с классами, которые созданы radiobuttonpage textboxpage*/
     public static RadioButtonPage RadioPage;

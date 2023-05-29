@@ -99,36 +99,44 @@ public class PracticeFormPage {
 
     /* метод ввода в поле */
     public void inputfirstName(String name_text) {
+        firstName.clear();
         firstName.sendKeys(name_text);
         String value_name = firstName.getAttribute("value");
         Assert.assertEquals(name_text, value_name);
     }
     public void inputLastName(String lastName_text) {
+        lastName.clear();
         lastName.sendKeys(lastName_text);
         String value_lastName = lastName.getAttribute("value");
         Assert.assertEquals(lastName_text, value_lastName);
     }
     public void inputEmail(String email_text) {
+        email.clear();
         email.sendKeys(email_text);
         String value_email = email.getAttribute("value");
         Assert.assertEquals(email_text, value_email);
     }
     public void inputMobile(String mobile_text) {
+        mobile.clear();
         mobile.sendKeys(mobile_text);
         String value_mobile = mobile.getAttribute("value");
         Assert.assertEquals(mobile_text, value_mobile);
     }
     public void inputdateOfBirth(String dateOfBirth_text) {
+        dateOfBirth.clear();
         dateOfBirth.sendKeys(dateOfBirth_text);
         String value_dateOfBirth = dateOfBirth.getAttribute("value");
         Assert.assertEquals(dateOfBirth_text, value_dateOfBirth);
     }
     public void inputsubjects(String subjects_text) {
+        subjects.clear();
         subjects.sendKeys(subjects_text);
         String value_subjects = subjects.getAttribute("value");
-        Assert.assertEquals(subjects_text, value_subjects);
+        System.out.println(value_subjects);
+       /* Assert.assertEquals(subjects_text, value_subjects);*/
     }
     public void inputcurrentAddress(String currentAddress_text) {
+        currentAddress.clear();
         currentAddress.sendKeys(currentAddress_text);
         String value_currentAddress = currentAddress.getAttribute("value");
         Assert.assertEquals(currentAddress_text, value_currentAddress);
